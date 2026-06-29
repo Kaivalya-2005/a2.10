@@ -12,7 +12,6 @@ WINDOW = 10
 ALLOWED_ORIGINS = [
     "https://app-ammivz.example.com",
     # Exam page origin (add this)
-    "https://exam.sanand.workers.dev",
 ]
 
 app = FastAPI()
