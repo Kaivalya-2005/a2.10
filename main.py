@@ -12,6 +12,7 @@ WINDOW = 10
 ALLOWED_ORIGINS = [
     "https://app-ammivz.example.com",
     # Exam page origin (add this)
+    "https://exam.sanand.workers.dev" 
 ]
 
 app = FastAPI()
@@ -19,7 +20,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
-    allow_methods=["GET", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
     expose_headers=["X-Request-ID"],
 )
